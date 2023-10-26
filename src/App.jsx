@@ -20,9 +20,12 @@ const App = () => {
           // Anda dapat menambahkan header lain jika diperlukan
           // 'Content-Type': 'application/json',
         };
-        let response = await fetch("http://127.0.0.1:8000/api/users/current", {
-          headers,
-        });
+        let response = await fetch(
+          "https://tanyacoding.my.id/api/users/current",
+          {
+            headers,
+          }
+        );
         let data = await response.json();
 
         // Periksa status respons HTTP
@@ -58,11 +61,15 @@ const App = () => {
   return (
     <div>
       <div>
-        <h1>Data User {mahasiswa.name}</h1>
-        <button onClick={handleTukarMahasiswa}>Tukar Mahasiswa</button>
-        <hr />
+        <h1 className="text-4xl text-center">Data User {mahasiswa.name}</h1>
+        <button
+          className="bg-blue-500 hover:bg-blue-700 my-3 text-white font-bold py-2 px-4 rounded"
+          onClick={handleTukarMahasiswa}
+        >
+          Tukar Mahasiswa
+        </button>
         {user && (
-          <ul>
+          <ul className="border border-gray-200 rounded-md max-w-[300px] p-3">
             <li>ID: {user.id}</li>
             <li>Username: {user.username}</li>
             <li>Name: {user.name}</li>
