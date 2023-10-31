@@ -1,12 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-// import { useState, useEffect } from "react";
 import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
 import Feature from "./Pages/Feature";
 
 const App = () => {
   return (
-    <div className="bg-gray-500 min-h-screen relative">
+    <div className="min-h-screen md:max-w-sm mx-auto">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="feature" element={<Feature />} />
