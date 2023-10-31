@@ -5,7 +5,7 @@ import Feature from "./Pages/Feature";
 
 const App = () => {
   return (
-    <div className="max-w-sm mx-auto bg-gray-50 min-h-screen max-h-screen relative">
+    <div className="min-w-full mx-auto bg-gray-50 max-h-screen relative">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="feature" element={<Feature />} />
