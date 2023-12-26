@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navigation = () => {
   return (
-    <div className="bg-[#6800F4] text-white flex justify-evenly items-center px-1 fixed bottom-0 w-full md:max-w-sm">
+    <div className="bg-[#6800F4] text-white flex justify-evenly items-center px-1 fixed bottom-0 w-full md:max-w-sm rounded-t-lg shadow-md">
       <div className="cursor-pointer">
         <Link to="/" className="flex flex-col pt-2">
           <FontAwesomeIcon icon={faHome} size="xl" />
